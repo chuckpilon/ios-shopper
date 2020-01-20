@@ -99,6 +99,8 @@ class StoresTableViewController: UITableViewController, NSFetchedResultsControll
 
     func configureCell(_ cell: UITableViewCell, withStore store: Store) {
         cell.textLabel!.text = store.name
+        let detail = NSString(format:"%@, %@, %@, %@", store.address1!, store.city!, store.state!, store.zip!)
+        cell.detailTextLabel!.text = detail as String
     }
 
     // MARK: - Fetched results controller

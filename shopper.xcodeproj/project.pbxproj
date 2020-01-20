@@ -24,6 +24,7 @@
 		BC5D256723CBE55E00E26882 /* NewStoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5D256623CBE55E00E26882 /* NewStoreViewController.swift */; };
 		BCCE1D7F23C2916E00B934C7 /* ItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE1D7E23C2916E00B934C7 /* ItemTableViewController.swift */; };
 		BCCE1D8123C40CF700B934C7 /* StoresTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE1D8023C40CF700B934C7 /* StoresTableViewController.swift */; };
+		BCDF0B8223D5DB2000DA697E /* BottomBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDF0B8123D5DB2000DA697E /* BottomBorder.swift */; };
 		BCF00EDC23C1AEC300F5C4A2 /* ItemBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF00EDB23C1AEC300F5C4A2 /* ItemBuilder.swift */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,7 @@
 		BC5D256623CBE55E00E26882 /* NewStoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewStoreViewController.swift; sourceTree = "<group>"; };
 		BCCE1D7E23C2916E00B934C7 /* ItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewController.swift; sourceTree = "<group>"; };
 		BCCE1D8023C40CF700B934C7 /* StoresTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoresTableViewController.swift; sourceTree = "<group>"; };
+		BCDF0B8123D5DB2000DA697E /* BottomBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBorder.swift; sourceTree = "<group>"; };
 		BCF00EDB23C1AEC300F5C4A2 /* ItemBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -126,6 +128,7 @@
 				BC17C83223A5ADE10005C414 /* Assets.xcassets */,
 				BC17C83723A5ADE10005C414 /* Info.plist */,
 				BC17C82623A5ADDE0005C414 /* SceneDelegate.swift */,
+				BCDF0B8123D5DB2000DA697E /* BottomBorder.swift */,
 			);
 			path = shopper;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 				BCCE1D7F23C2916E00B934C7 /* ItemTableViewController.swift in Sources */,
 				BC4EB85E23B2C3F7005A2F9F /* OpenListTableViewController.swift in Sources */,
 				BC2ED31523BCEC2E0058E8E9 /* ListItemBuilder.swift in Sources */,
+				BCDF0B8223D5DB2000DA697E /* BottomBorder.swift in Sources */,
 				BC17C82723A5ADDE0005C414 /* SceneDelegate.swift in Sources */,
 				BC4EB85C23B28C55005A2F9F /* SettingsViewController.swift in Sources */,
 				BC2ED31023BCE5E60058E8E9 /* ListBuilder.swift in Sources */,

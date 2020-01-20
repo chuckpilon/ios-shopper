@@ -14,6 +14,13 @@ class NewStoreViewController: UIViewController {
     
     var managedObjectContext: NSManagedObjectContext? = nil
     
+    @IBOutlet weak var name: UITextField?
+    @IBOutlet weak var address1: UITextField?
+    @IBOutlet weak var address2: UITextField?
+    @IBOutlet weak var city: UITextField?
+    @IBOutlet weak var state: UITextField?
+    @IBOutlet weak var zip: UITextField?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,6 +31,16 @@ class NewStoreViewController: UIViewController {
 
         let saveButton = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(save(_:)))
         navigationItem.rightBarButtonItem = saveButton
+        
+        
+        let borderColor = UIColor.lightGray.cgColor
+        name?.addBottomBorder(color: borderColor)
+        address1?.addBottomBorder(color: borderColor)
+        address2?.addBottomBorder(color: borderColor)
+        city?.addBottomBorder(color: borderColor)
+        state?.addBottomBorder(color: borderColor)
+        zip?.addBottomBorder(color: borderColor)
+
     }
 
     @objc
@@ -33,29 +50,56 @@ class NewStoreViewController: UIViewController {
 
     @objc
     func save(_ sender: Any) {
-        // TODO: Save managed object
-        let nameView = self.view.viewWithTag(1) as! UITextField
-        let name = nameView.text
-        let address1 = "6984 Wyndham Way"
-        let address2 = ""
-        let city = "Woodbury"
-        let state = "MN"
-        let zip = "55125"
         let latitude = 44.903882 as NSDecimalNumber
         let longitude = -92.957016 as NSDecimalNumber;
 
         let context: NSManagedObjectContext? = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext
 
-        _ = StoreBuilder(context: context!)
-            .name(name: name!)
-            .address1(address1: address1)
-            .address2(address2: address2)
-            .city(city: city)
-            .state(state: state)
-            .zip(zip: zip)
+        let newStore = StoreBuilder(context: context!)
+            .name(name: name!.text!)
+            .address1(address1: address1!.text!)
+            .address2(address2: address2!.text!)
+            .city(city: city!.text!)
+            .state(state: state!.text!)
+            .zip(zip: zip!.text!)
             .latitude(latitude: latitude)
             .longitude(longitude: longitude)
             .build();
+
+        
+        // Add a new list just for testing.
+        // TODO: Remove this
+        
+        let newItem1 = ItemBuilder(context: context!)
+            .name(name: name!.text! + " List 1 Item 1")
+            .sku(sku: "799589023")
+            .build()
+
+        let newItem2 = ItemBuilder(context: context!)
+            .name(name: name!.text! + " List 1 Item 2")
+            .sku(sku: "799589023")
+            .build()
+
+        let newList1 = ListBuilder(context: context!)
+            .name(name: name!.text! + " List 1")
+            .open(open: true)
+            .store(store: newStore)
+            .build()
+
+        _ = ListItemBuilder(context: context!)
+            .item(item: newItem1)
+            .quantity(quantity: 3)
+            .list(list: newList1)
+            .build()
+
+        _ = ListItemBuilder(context: context!)
+            .item(item: newItem2)
+            .quantity(quantity: 3)
+            .list(list: newList1)
+            .build()
+        
+        //            insertList(name: target.name! + " List 1", open: true, store: target)
+
         
 
         // Save the context.
