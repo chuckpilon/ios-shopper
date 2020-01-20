@@ -147,12 +147,12 @@
                             <constraint firstItem="X14-BJ-RJL" firstAttribute="trailing" secondItem="hgM-l2-mlO" secondAttribute="trailing" id="TOF-GS-bLW"/>
                             <constraint firstItem="hgM-l2-mlO" firstAttribute="trailing" secondItem="C4y-wM-mkM" secondAttribute="trailingMargin" id="a4i-WY-Mff"/>
                             <constraint firstItem="fXk-SU-hBY" firstAttribute="leading" secondItem="hgM-l2-mlO" secondAttribute="leading" id="cTs-e1-7s6"/>
-                            <constraint firstItem="SCZ-au-Vw3" firstAttribute="leading" secondItem="hgM-l2-mlO" secondAttribute="leading" id="dZ4-b3-nwA"/>
+                            <constraint firstItem="SCZ-au-Vw3" firstAttribute="leading" secondItem="fXk-SU-hBY" secondAttribute="leading" id="dZ4-b3-nwA"/>
                             <constraint firstItem="1Hi-Zl-iQb" firstAttribute="trailing" secondItem="hgM-l2-mlO" secondAttribute="trailing" id="fAN-uW-wSU"/>
-                            <constraint firstItem="Efv-pH-2Mc" firstAttribute="trailing" secondItem="C4y-wM-mkM" secondAttribute="centerX" id="i9a-it-33N"/>
+                            <constraint firstItem="Efv-pH-2Mc" firstAttribute="trailing" secondItem="SCZ-au-Vw3" secondAttribute="centerX" id="i9a-it-33N"/>
                             <constraint firstItem="1Hi-Zl-iQb" firstAttribute="top" secondItem="SCZ-au-Vw3" secondAttribute="bottom" constant="-1" id="irW-Me-KKa"/>
                             <constraint firstItem="fXk-SU-hBY" firstAttribute="top" secondItem="X14-BJ-RJL" secondAttribute="bottom" constant="-1" id="q1z-Tm-GJ9"/>
-                            <constraint firstItem="Efv-pH-2Mc" firstAttribute="leading" secondItem="hgM-l2-mlO" secondAttribute="leading" id="qC6-Qn-w7B"/>
+                            <constraint firstItem="Efv-pH-2Mc" firstAttribute="leading" secondItem="SCZ-au-Vw3" secondAttribute="leading" id="qC6-Qn-w7B"/>
                             <constraint firstItem="SCZ-au-Vw3" firstAttribute="top" secondItem="fXk-SU-hBY" secondAttribute="bottom" constant="-1" id="wps-dw-phr"/>
                             <constraint firstItem="fXk-SU-hBY" firstAttribute="trailing" secondItem="hgM-l2-mlO" secondAttribute="trailing" id="xTa-hI-1Xs"/>
                         </constraints>
@@ -201,7 +201,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="muc-M6-pir"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Settings" image="gear" catalog="system" id="uRW-is-u0o"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="settings" id="uRW-is-u0o"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7ak-IR-VYN" sceneMemberID="firstResponder"/>
             </objects>
@@ -301,7 +301,7 @@
         <scene sceneID="TY9-Ht-JaW">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Brb-Zx-YVs" userLabel="Open Navigation Controller" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Lists" image="cart" catalog="system" id="Nal-zw-VCp" userLabel="Open List"/>
+                    <tabBarItem key="tabBarItem" title="Lists" image="cart" id="Nal-zw-VCp" userLabel="Open List"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rW2-vM-GXT">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -320,7 +320,7 @@
         <scene sceneID="sat-50-sF3">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fcs-lB-Cjs" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Items" image="cube.box" catalog="system" id="2ft-Ea-4p6"/>
+                    <tabBarItem key="tabBarItem" title="Items" image="items" id="2ft-Ea-4p6"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pSl-v7-JVG">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -339,7 +339,7 @@
         <scene sceneID="RA0-vE-Ysn">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WFK-AZ-C2e" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Stores" image="house" catalog="system" id="rVw-R9-igf"/>
+                    <tabBarItem key="tabBarItem" title="Stores" image="store" id="rVw-R9-igf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bwX-l1-ubD">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -374,9 +374,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="cart" catalog="system" width="64" height="50"/>
-        <image name="cube.box" catalog="system" width="64" height="62"/>
-        <image name="gear" catalog="system" width="64" height="58"/>
-        <image name="house" catalog="system" width="64" height="54"/>
+        <image name="cart" width="23.5" height="21"/>
+        <image name="items" width="23.5" height="19"/>
+        <image name="settings" width="23.5" height="23.5"/>
+        <image name="store" width="23.5" height="19.5"/>
     </resources>
 </document>
