@@ -33,7 +33,7 @@ class NewStoreViewController: UIViewController {
         navigationItem.rightBarButtonItem = saveButton
         
         
-        let borderColor = UIColor.lightGray.cgColor
+        let borderColor = UIColor.init(red: 0.9, green: 0.9, blue: 0.9, alpha: 1.0).cgColor
         name?.addBottomBorder(color: borderColor)
         address1?.addBottomBorder(color: borderColor)
         address2?.addBottomBorder(color: borderColor)

@@ -87,74 +87,74 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="hgM-l2-mlO">
-                                <rect key="frame" x="20" y="80" width="374" height="38"/>
+                                <rect key="frame" x="20" y="80" width="374" height="48"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="38" id="UCi-JX-orX"/>
+                                    <constraint firstAttribute="height" constant="48" id="UCi-JX-orX"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" textContentType="name"/>
                             </textField>
                             <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Address" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="X14-BJ-RJL">
-                                <rect key="frame" x="20" y="117" width="374" height="38"/>
+                                <rect key="frame" x="20" y="127" width="374" height="48"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="38" id="cGO-Q7-19g"/>
+                                    <constraint firstAttribute="height" constant="48" id="cGO-Q7-19g"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" textContentType="address-line1"/>
                             </textField>
                             <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Address" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="fXk-SU-hBY">
-                                <rect key="frame" x="20" y="154" width="374" height="38"/>
+                                <rect key="frame" x="20" y="174" width="374" height="48"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="38" id="9t1-oh-97k"/>
+                                    <constraint firstAttribute="height" constant="48" id="9t1-oh-97k"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" textContentType="address-line2"/>
                             </textField>
                             <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="City" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="SCZ-au-Vw3">
-                                <rect key="frame" x="20" y="191" width="374" height="38"/>
+                                <rect key="frame" x="20" y="221" width="374" height="48"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="38" id="NcO-2g-Eta"/>
+                                    <constraint firstAttribute="height" constant="48" id="NcO-2g-Eta"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" textContentType="address-level2"/>
                             </textField>
                             <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="State" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Efv-pH-2Mc">
-                                <rect key="frame" x="20" y="228" width="374" height="38"/>
+                                <rect key="frame" x="20" y="268" width="187" height="48"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="38" id="gqa-q6-bcy"/>
+                                    <constraint firstAttribute="height" constant="48" id="gqa-q6-bcy"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" textContentType="address-level1"/>
                             </textField>
                             <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Zip" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="1Hi-Zl-iQb">
-                                <rect key="frame" x="20" y="265" width="374" height="38"/>
+                                <rect key="frame" x="207" y="268" width="187" height="48"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="38" id="pXk-rv-yDr"/>
+                                    <constraint firstAttribute="height" constant="48" id="pXk-rv-yDr"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" textContentType="postal-code"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="Efv-pH-2Mc" firstAttribute="top" secondItem="SCZ-au-Vw3" secondAttribute="bottom" constant="-1" id="2V1-IX-qjJ"/>
-                            <constraint firstItem="1Hi-Zl-iQb" firstAttribute="leading" secondItem="Efv-pH-2Mc" secondAttribute="leading" id="3iW-5W-OOb"/>
+                            <constraint firstItem="1Hi-Zl-iQb" firstAttribute="leading" secondItem="Efv-pH-2Mc" secondAttribute="trailing" id="3iW-5W-OOb"/>
                             <constraint firstItem="X14-BJ-RJL" firstAttribute="leading" secondItem="hgM-l2-mlO" secondAttribute="leading" id="6oO-Za-XGB"/>
                             <constraint firstItem="hgM-l2-mlO" firstAttribute="top" secondItem="C8w-rH-AQK" secondAttribute="top" constant="24" id="AQ4-P1-mQY"/>
                             <constraint firstItem="X14-BJ-RJL" firstAttribute="top" secondItem="hgM-l2-mlO" secondAttribute="bottom" constant="-1" id="Cme-wb-8L6"/>
                             <constraint firstItem="hgM-l2-mlO" firstAttribute="leading" secondItem="C4y-wM-mkM" secondAttribute="leadingMargin" id="DM7-w5-TTW"/>
-                            <constraint firstItem="SCZ-au-Vw3" firstAttribute="trailing" secondItem="fXk-SU-hBY" secondAttribute="trailing" id="JRL-r0-wCh"/>
+                            <constraint firstItem="SCZ-au-Vw3" firstAttribute="trailing" secondItem="hgM-l2-mlO" secondAttribute="trailing" id="JRL-r0-wCh"/>
                             <constraint firstItem="X14-BJ-RJL" firstAttribute="trailing" secondItem="hgM-l2-mlO" secondAttribute="trailing" id="TOF-GS-bLW"/>
                             <constraint firstItem="hgM-l2-mlO" firstAttribute="trailing" secondItem="C4y-wM-mkM" secondAttribute="trailingMargin" id="a4i-WY-Mff"/>
-                            <constraint firstItem="fXk-SU-hBY" firstAttribute="leading" secondItem="X14-BJ-RJL" secondAttribute="leading" id="cTs-e1-7s6"/>
-                            <constraint firstItem="SCZ-au-Vw3" firstAttribute="leading" secondItem="fXk-SU-hBY" secondAttribute="leading" id="dZ4-b3-nwA"/>
-                            <constraint firstItem="1Hi-Zl-iQb" firstAttribute="trailing" secondItem="Efv-pH-2Mc" secondAttribute="trailing" id="fAN-uW-wSU"/>
-                            <constraint firstItem="Efv-pH-2Mc" firstAttribute="trailing" secondItem="SCZ-au-Vw3" secondAttribute="trailing" id="i9a-it-33N"/>
-                            <constraint firstItem="1Hi-Zl-iQb" firstAttribute="top" secondItem="Efv-pH-2Mc" secondAttribute="bottom" constant="-1" id="irW-Me-KKa"/>
+                            <constraint firstItem="fXk-SU-hBY" firstAttribute="leading" secondItem="hgM-l2-mlO" secondAttribute="leading" id="cTs-e1-7s6"/>
+                            <constraint firstItem="SCZ-au-Vw3" firstAttribute="leading" secondItem="hgM-l2-mlO" secondAttribute="leading" id="dZ4-b3-nwA"/>
+                            <constraint firstItem="1Hi-Zl-iQb" firstAttribute="trailing" secondItem="hgM-l2-mlO" secondAttribute="trailing" id="fAN-uW-wSU"/>
+                            <constraint firstItem="Efv-pH-2Mc" firstAttribute="trailing" secondItem="C4y-wM-mkM" secondAttribute="centerX" id="i9a-it-33N"/>
+                            <constraint firstItem="1Hi-Zl-iQb" firstAttribute="top" secondItem="SCZ-au-Vw3" secondAttribute="bottom" constant="-1" id="irW-Me-KKa"/>
                             <constraint firstItem="fXk-SU-hBY" firstAttribute="top" secondItem="X14-BJ-RJL" secondAttribute="bottom" constant="-1" id="q1z-Tm-GJ9"/>
-                            <constraint firstItem="Efv-pH-2Mc" firstAttribute="leading" secondItem="SCZ-au-Vw3" secondAttribute="leading" id="qC6-Qn-w7B"/>
+                            <constraint firstItem="Efv-pH-2Mc" firstAttribute="leading" secondItem="hgM-l2-mlO" secondAttribute="leading" id="qC6-Qn-w7B"/>
                             <constraint firstItem="SCZ-au-Vw3" firstAttribute="top" secondItem="fXk-SU-hBY" secondAttribute="bottom" constant="-1" id="wps-dw-phr"/>
-                            <constraint firstItem="fXk-SU-hBY" firstAttribute="trailing" secondItem="X14-BJ-RJL" secondAttribute="trailing" id="xTa-hI-1Xs"/>
+                            <constraint firstItem="fXk-SU-hBY" firstAttribute="trailing" secondItem="hgM-l2-mlO" secondAttribute="trailing" id="xTa-hI-1Xs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="C8w-rH-AQK"/>
                     </view>
