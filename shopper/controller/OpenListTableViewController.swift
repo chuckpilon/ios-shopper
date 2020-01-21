@@ -136,19 +136,19 @@ class OpenListTableViewController: UITableViewController, NSFetchedResultsContro
     }
 
     func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange anObject: Any, at indexPath: IndexPath?, for type: NSFetchedResultsChangeType, newIndexPath: IndexPath?) {
-//        switch type {
-//            case .insert:
-//                tableView.insertRows(at: [newIndexPath!], with: .fade)
-//            case .delete:
-//                tableView.deleteRows(at: [indexPath!], with: .fade)
-//            case .update:
-//                configureCell(tableView.cellForRow(at: indexPath!)!, withList: anObject as! List)
-//            case .move:
-//                configureCell(tableView.cellForRow(at: indexPath!)!, withList: anObject as! List)
-//                tableView.moveRow(at: indexPath!, to: newIndexPath!)
-//            default:
-//                return
-//        }
+        switch type {
+            case .insert:
+                tableView.insertRows(at: [newIndexPath!], with: .fade)
+            case .delete:
+                tableView.deleteRows(at: [indexPath!], with: .fade)
+            case .update:
+                configureCell(tableView.cellForRow(at: indexPath!)!, withList: anObject as! List)
+            case .move:
+                configureCell(tableView.cellForRow(at: indexPath!)!, withList: anObject as! List)
+                tableView.moveRow(at: indexPath!, to: newIndexPath!)
+            default:
+                return
+        }
     }
 
     func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
