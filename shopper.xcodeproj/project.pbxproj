@@ -26,6 +26,7 @@
 		BCCE1D8123C40CF700B934C7 /* StoresTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE1D8023C40CF700B934C7 /* StoresTableViewController.swift */; };
 		BCDF0B8223D5DB2000DA697E /* BottomBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDF0B8123D5DB2000DA697E /* BottomBorder.swift */; };
 		BCF00EDC23C1AEC300F5C4A2 /* ItemBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF00EDB23C1AEC300F5C4A2 /* ItemBuilder.swift */; };
+		F8889B6423D6592300BC5E76 /* NewListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8889B6323D6592300BC5E76 /* NewListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		BCCE1D8023C40CF700B934C7 /* StoresTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoresTableViewController.swift; sourceTree = "<group>"; };
 		BCDF0B8123D5DB2000DA697E /* BottomBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBorder.swift; sourceTree = "<group>"; };
 		BCF00EDB23C1AEC300F5C4A2 /* ItemBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemBuilder.swift; sourceTree = "<group>"; };
+		F8889B6323D6592300BC5E76 /* NewListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +183,7 @@
 				BCCE1D7E23C2916E00B934C7 /* ItemTableViewController.swift */,
 				BCCE1D8023C40CF700B934C7 /* StoresTableViewController.swift */,
 				BC5D256623CBE55E00E26882 /* NewStoreViewController.swift */,
+				F8889B6323D6592300BC5E76 /* NewListViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 				BC5D256723CBE55E00E26882 /* NewStoreViewController.swift in Sources */,
 				BC17C83123A5ADDE0005C414 /* shopper.xcdatamodeld in Sources */,
 				BC2ED30E23BC3C7A0058E8E9 /* StoreBuilder.swift in Sources */,
+				F8889B6423D6592300BC5E76 /* NewListViewController.swift in Sources */,
 				BCF00EDC23C1AEC300F5C4A2 /* ItemBuilder.swift in Sources */,
 				BC2ED31923BD35480058E8E9 /* ListItemTableViewController.swift in Sources */,
 				BC17C82523A5ADDE0005C414 /* AppDelegate.swift in Sources */,
