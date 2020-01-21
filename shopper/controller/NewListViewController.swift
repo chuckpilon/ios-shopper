@@ -10,9 +10,13 @@ import Foundation
 import UIKit
 import CoreData
 
-class NewListViewController: UIViewController {
+class NewListViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     var managedObjectContext: NSManagedObjectContext? = nil
+    
+    @IBOutlet weak var storePickerView: UIPickerView!
+    var pickerData: [String] = []
+
     
 //    @IBOutlet weak var name: UITextField?
 //    @IBOutlet weak var address1: UITextField?
@@ -32,6 +36,13 @@ class NewListViewController: UIViewController {
         let saveButton = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(save(_:)))
         navigationItem.rightBarButtonItem = saveButton
         
+        storePickerView.delegate = self
+        storePickerView.dataSource = self
+        
+        pickerData = ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5", "Item 6"]
+        
+        
+        
         
 //        let borderColor = UIColor.init(red: 0.9, green: 0.9, blue: 0.9, alpha: 1.0).cgColor
 //        name?.addBottomBorder(color: borderColor)
@@ -42,7 +53,19 @@ class NewListViewController: UIViewController {
 //        zip?.addBottomBorder(color: borderColor)
 
     }
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
 
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickerData.count
+    }
+
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return pickerData[row]
+    }
+    
     @objc
     func cancel(_ sender: Any) {
         dismiss(animated: true, completion: {})

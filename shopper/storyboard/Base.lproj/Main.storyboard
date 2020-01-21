@@ -147,12 +147,12 @@
                             <constraint firstItem="X14-BJ-RJL" firstAttribute="trailing" secondItem="hgM-l2-mlO" secondAttribute="trailing" id="TOF-GS-bLW"/>
                             <constraint firstItem="hgM-l2-mlO" firstAttribute="trailing" secondItem="C4y-wM-mkM" secondAttribute="trailingMargin" id="a4i-WY-Mff"/>
                             <constraint firstItem="fXk-SU-hBY" firstAttribute="leading" secondItem="hgM-l2-mlO" secondAttribute="leading" id="cTs-e1-7s6"/>
-                            <constraint firstItem="SCZ-au-Vw3" firstAttribute="leading" secondItem="fXk-SU-hBY" secondAttribute="leading" id="dZ4-b3-nwA"/>
+                            <constraint firstItem="SCZ-au-Vw3" firstAttribute="leading" secondItem="hgM-l2-mlO" secondAttribute="leading" id="dZ4-b3-nwA"/>
                             <constraint firstItem="1Hi-Zl-iQb" firstAttribute="trailing" secondItem="hgM-l2-mlO" secondAttribute="trailing" id="fAN-uW-wSU"/>
                             <constraint firstItem="Efv-pH-2Mc" firstAttribute="trailing" secondItem="SCZ-au-Vw3" secondAttribute="centerX" id="i9a-it-33N"/>
                             <constraint firstItem="1Hi-Zl-iQb" firstAttribute="top" secondItem="SCZ-au-Vw3" secondAttribute="bottom" constant="-1" id="irW-Me-KKa"/>
                             <constraint firstItem="fXk-SU-hBY" firstAttribute="top" secondItem="X14-BJ-RJL" secondAttribute="bottom" constant="-1" id="q1z-Tm-GJ9"/>
-                            <constraint firstItem="Efv-pH-2Mc" firstAttribute="leading" secondItem="SCZ-au-Vw3" secondAttribute="leading" id="qC6-Qn-w7B"/>
+                            <constraint firstItem="Efv-pH-2Mc" firstAttribute="leading" secondItem="hgM-l2-mlO" secondAttribute="leading" id="qC6-Qn-w7B"/>
                             <constraint firstItem="SCZ-au-Vw3" firstAttribute="top" secondItem="fXk-SU-hBY" secondAttribute="bottom" constant="-1" id="wps-dw-phr"/>
                             <constraint firstItem="fXk-SU-hBY" firstAttribute="trailing" secondItem="hgM-l2-mlO" secondAttribute="trailing" id="xTa-hI-1Xs"/>
                         </constraints>
@@ -176,13 +176,22 @@
         <scene sceneID="7XX-HU-oh8">
             <objects>
                 <viewController id="AQ3-bj-nPf" userLabel="New List View Controller" customClass="NewListViewController" customModule="Shopper" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="J5o-10-cSI" customClass="I">
+                    <view key="view" contentMode="scaleToFill" id="J5o-10-cSI" userLabel="View" customClass="I">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zg2-r5-r84">
+                                <rect key="frame" x="0.0" y="313" width="414" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="2De-6D-tpb"/>
                     </view>
                     <navigationItem key="navigationItem" id="EJI-OC-tEB"/>
+                    <connections>
+                        <outlet property="storePickerView" destination="Zg2-r5-r84" id="ZTd-xZ-wBh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S0B-yB-2Ki" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -396,7 +405,6 @@
         <!--Navigation Controller-->
         <scene sceneID="czL-Gq-Q0w">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Chj-jc-9Ga" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AAB-Bd-P0T" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AXe-0k-bPg">
@@ -408,6 +416,7 @@
                         <segue destination="AQ3-bj-nPf" kind="relationship" relationship="rootViewController" id="e89-EF-BuJ"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Chj-jc-9Ga" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2382.608695652174" y="-1026.5625"/>
         </scene>
