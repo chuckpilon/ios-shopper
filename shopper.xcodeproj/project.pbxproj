@@ -20,7 +20,7 @@
 		BC2ED31523BCEC2E0058E8E9 /* ListItemBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2ED31423BCEC2E0058E8E9 /* ListItemBuilder.swift */; };
 		BC2ED31923BD35480058E8E9 /* ListItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2ED31823BD35480058E8E9 /* ListItemTableViewController.swift */; };
 		BC4EB85C23B28C55005A2F9F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4EB85B23B28C55005A2F9F /* SettingsViewController.swift */; };
-		BC4EB85E23B2C3F7005A2F9F /* OpenListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4EB85D23B2C3F7005A2F9F /* OpenListTableViewController.swift */; };
+		BC4EB85E23B2C3F7005A2F9F /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4EB85D23B2C3F7005A2F9F /* ListTableViewController.swift */; };
 		BC5D256723CBE55E00E26882 /* NewStoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5D256623CBE55E00E26882 /* NewStoreViewController.swift */; };
 		BCCE1D7F23C2916E00B934C7 /* ItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE1D7E23C2916E00B934C7 /* ItemTableViewController.swift */; };
 		BCCE1D8123C40CF700B934C7 /* StoresTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE1D8023C40CF700B934C7 /* StoresTableViewController.swift */; };
@@ -66,7 +66,7 @@
 		BC2ED31423BCEC2E0058E8E9 /* ListItemBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemBuilder.swift; sourceTree = "<group>"; };
 		BC2ED31823BD35480058E8E9 /* ListItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemTableViewController.swift; sourceTree = "<group>"; };
 		BC4EB85B23B28C55005A2F9F /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		BC4EB85D23B2C3F7005A2F9F /* OpenListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenListTableViewController.swift; sourceTree = "<group>"; };
+		BC4EB85D23B2C3F7005A2F9F /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		BC5D256623CBE55E00E26882 /* NewStoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewStoreViewController.swift; sourceTree = "<group>"; };
 		BCCE1D7E23C2916E00B934C7 /* ItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewController.swift; sourceTree = "<group>"; };
 		BCCE1D8023C40CF700B934C7 /* StoresTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoresTableViewController.swift; sourceTree = "<group>"; };
@@ -177,7 +177,7 @@
 		BCCE1D7D23C2912700B934C7 /* controller */ = {
 			isa = PBXGroup;
 			children = (
-				BC4EB85D23B2C3F7005A2F9F /* OpenListTableViewController.swift */,
+				BC4EB85D23B2C3F7005A2F9F /* ListTableViewController.swift */,
 				BC2ED31823BD35480058E8E9 /* ListItemTableViewController.swift */,
 				BC4EB85B23B28C55005A2F9F /* SettingsViewController.swift */,
 				BCCE1D7E23C2916E00B934C7 /* ItemTableViewController.swift */,
@@ -328,7 +328,7 @@
 				BC17C82523A5ADDE0005C414 /* AppDelegate.swift in Sources */,
 				BCCE1D8123C40CF700B934C7 /* StoresTableViewController.swift in Sources */,
 				BCCE1D7F23C2916E00B934C7 /* ItemTableViewController.swift in Sources */,
-				BC4EB85E23B2C3F7005A2F9F /* OpenListTableViewController.swift in Sources */,
+				BC4EB85E23B2C3F7005A2F9F /* ListTableViewController.swift in Sources */,
 				BC2ED31523BCEC2E0058E8E9 /* ListItemBuilder.swift in Sources */,
 				BCDF0B8223D5DB2000DA697E /* BottomBorder.swift in Sources */,
 				BC17C82723A5ADDE0005C414 /* SceneDelegate.swift in Sources */,

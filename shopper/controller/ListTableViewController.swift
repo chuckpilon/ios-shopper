@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class OpenListTableViewController: UITableViewController, NSFetchedResultsControllerDelegate {
+class ListTableViewController: UITableViewController, NSFetchedResultsControllerDelegate {
     
     var managedObjectContext: NSManagedObjectContext? = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext
 
@@ -77,7 +77,21 @@ class OpenListTableViewController: UITableViewController, NSFetchedResultsContro
 //    }
 
     func configureCell(_ cell: UITableViewCell, withList list: List) {
-        cell.textLabel!.text = list.name
+        let nameLabel = cell.viewWithTag(1) as! UILabel
+        nameLabel.text = list.name
+
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "en_US")
+        formatter.dateStyle = .short
+        formatter.timeStyle = .short
+
+        let createdLabel = cell.viewWithTag(2) as! UILabel
+        let created = formatter.string(from: list.created!)
+        createdLabel.text = String(format:"Created: %@", created)
+
+        let dueLabel = cell.viewWithTag(3) as! UILabel
+        let due = formatter.string(from: list.due!)
+        dueLabel.text = String(format:"Due: %@", due)
     }
 
     // MARK: - Fetched results controller

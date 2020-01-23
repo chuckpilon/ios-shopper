@@ -69,6 +69,8 @@ class NewListViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
             .name(name: name!.text!)
             .open(open: true)
             .store(store: store)
+            .created(created: Date())
+            .due(due: Date())
             .build()
         
         // Save the context.

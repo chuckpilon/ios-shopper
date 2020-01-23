@@ -30,6 +30,16 @@ class ListBuilder {
         list.open = open
         return self
     }
+    
+    func created(created: Date) -> ListBuilder {
+        list.created = created
+        return self
+    }
+
+    func due(due: Date) -> ListBuilder {
+        list.due = due
+        return self
+    }
 
     func store(store: Store) -> ListBuilder {
         list.store = store

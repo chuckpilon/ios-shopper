@@ -152,6 +152,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             .name(name: name)
             .open(open: open)
             .store(store: store)
+            .created(created: Date())
+            .due(due: Date())
             .build()
 
         // Save the context.

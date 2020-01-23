@@ -287,18 +287,46 @@
         <!--Open List-->
         <scene sceneID="k1m-5c-W8i">
             <objects>
-                <tableViewController id="RvL-eM-MQP" userLabel="Open List" customClass="OpenListTableViewController" customModule="Shopper" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="NHI-70-mZT">
+                <tableViewController id="RvL-eM-MQP" userLabel="Open List" customClass="ListTableViewController" customModule="Shopper" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="77" sectionHeaderHeight="28" sectionFooterHeight="28" id="NHI-70-mZT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="OpenListCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="OpenListCell" id="XOa-pp-own">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="OpenListCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="OpenListCell" rowHeight="77" id="XOa-pp-own">
+                                <rect key="frame" x="0.0" y="28" width="414" height="77"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XOa-pp-own" id="LKA-4v-xQm">
-                                    <rect key="frame" x="0.0" y="0.0" width="383" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="383" height="77"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B75-Rf-d0u">
+                                            <rect key="frame" x="20" y="11" width="45" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="alS-VA-AlS">
+                                            <rect key="frame" x="20" y="35" width="45" height="14.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Due" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cOE-pr-FAu">
+                                            <rect key="frame" x="20" y="52.5" width="23" height="14.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="B75-Rf-d0u" firstAttribute="leading" secondItem="LKA-4v-xQm" secondAttribute="leadingMargin" id="5Hf-XS-gfZ"/>
+                                        <constraint firstItem="alS-VA-AlS" firstAttribute="leading" secondItem="B75-Rf-d0u" secondAttribute="leading" id="BRK-Kf-i4n"/>
+                                        <constraint firstItem="cOE-pr-FAu" firstAttribute="leading" secondItem="alS-VA-AlS" secondAttribute="leading" id="NTb-fe-h8w"/>
+                                        <constraint firstItem="alS-VA-AlS" firstAttribute="top" secondItem="B75-Rf-d0u" secondAttribute="bottom" constant="3" id="Rjr-vC-Cnn"/>
+                                        <constraint firstItem="cOE-pr-FAu" firstAttribute="top" secondItem="alS-VA-AlS" secondAttribute="bottom" constant="3" id="clR-G5-d0n"/>
+                                        <constraint firstItem="B75-Rf-d0u" firstAttribute="top" secondItem="LKA-4v-xQm" secondAttribute="topMargin" id="z9a-1C-9dH"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <segue destination="NhC-4G-Cul" kind="show" id="nLN-ZS-pvp"/>

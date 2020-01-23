@@ -84,6 +84,8 @@ class NewStoreViewController: UIViewController {
             .name(name: name!.text! + " List 1")
             .open(open: true)
             .store(store: newStore)
+            .created(created: Date())
+            .due(due: Date() + 1000)
             .build()
 
         _ = ListItemBuilder(context: context!)

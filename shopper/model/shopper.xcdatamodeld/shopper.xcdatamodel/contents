@@ -7,6 +7,7 @@
     </entity>
     <entity name="List" representedClassName="List" syncable="YES" codeGenerationType="class">
         <attribute name="created" attributeType="Date" defaultDateTimeInterval="599551200" usesScalarValueType="NO"/>
+        <attribute name="due" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="name" attributeType="String" defaultValueString=""/>
         <attribute name="open" attributeType="Boolean" defaultValueString="YES" usesScalarValueType="YES"/>
         <relationship name="items" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="ListItem" inverseName="list" inverseEntity="ListItem"/>
@@ -29,9 +30,9 @@
         <relationship name="lists" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="List" inverseName="store" inverseEntity="List"/>
     </entity>
     <elements>
-        <element name="List" positionX="-591.44140625" positionY="168.0078125" width="128" height="118"/>
+        <element name="Item" positionX="-381.6640625" positionY="337.4140625" width="128" height="88"/>
+        <element name="List" positionX="-591.44140625" positionY="168.0078125" width="128" height="133"/>
         <element name="ListItem" positionX="-383.98046875" positionY="182.8203125" width="128" height="88"/>
         <element name="Store" positionX="-774.46875" positionY="108.23828125" width="128" height="178"/>
-        <element name="Item" positionX="-381.6640625" positionY="337.4140625" width="128" height="88"/>
     </elements>
 </model>
