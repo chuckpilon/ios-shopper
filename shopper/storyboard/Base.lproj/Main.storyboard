@@ -181,32 +181,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Store" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rJH-L2-6su">
-                                <rect key="frame" x="20" y="78" width="41" height="21"/>
+                                <rect key="frame" x="20" y="134" width="41" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zg2-r5-r84">
-                                <rect key="frame" x="20" y="99" width="320" height="216"/>
-                            </pickerView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S33-VG-q1Q">
-                                <rect key="frame" x="20" y="323" width="374" height="48"/>
+                                <rect key="frame" x="20" y="78" width="374" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="JLn-ze-vai"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" textContentType="name"/>
                             </textField>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zg2-r5-r84">
+                                <rect key="frame" x="20" y="163" width="374" height="216"/>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="S33-VG-q1Q" firstAttribute="leading" secondItem="J5o-10-cSI" secondAttribute="leadingMargin" id="9bl-4T-x0E"/>
-                            <constraint firstItem="Zg2-r5-r84" firstAttribute="top" secondItem="rJH-L2-6su" secondAttribute="bottom" id="H4j-Uj-WCj"/>
                             <constraint firstItem="S33-VG-q1Q" firstAttribute="trailing" secondItem="J5o-10-cSI" secondAttribute="trailingMargin" id="HVa-yU-tvA"/>
-                            <constraint firstItem="rJH-L2-6su" firstAttribute="top" secondItem="2De-6D-tpb" secondAttribute="top" constant="22" id="Ro3-DE-98c"/>
+                            <constraint firstItem="Zg2-r5-r84" firstAttribute="trailing" secondItem="S33-VG-q1Q" secondAttribute="trailing" id="I11-hb-nbE"/>
+                            <constraint firstItem="rJH-L2-6su" firstAttribute="top" secondItem="2De-6D-tpb" secondAttribute="top" constant="78" id="Ro3-DE-98c"/>
+                            <constraint firstItem="Zg2-r5-r84" firstAttribute="leading" secondItem="rJH-L2-6su" secondAttribute="leading" id="YR2-ap-4tw"/>
                             <constraint firstItem="rJH-L2-6su" firstAttribute="leading" secondItem="J5o-10-cSI" secondAttribute="leadingMargin" id="iwT-G7-2gA"/>
-                            <constraint firstItem="S33-VG-q1Q" firstAttribute="top" secondItem="Zg2-r5-r84" secondAttribute="bottom" constant="8" symbolic="YES" id="qcP-c6-NWh"/>
-                            <constraint firstItem="Zg2-r5-r84" firstAttribute="leading" secondItem="J5o-10-cSI" secondAttribute="leadingMargin" id="xuh-Xc-4yE"/>
+                            <constraint firstItem="S33-VG-q1Q" firstAttribute="top" secondItem="2De-6D-tpb" secondAttribute="top" constant="22" id="qcP-c6-NWh"/>
+                            <constraint firstItem="Zg2-r5-r84" firstAttribute="top" secondItem="rJH-L2-6su" secondAttribute="bottom" constant="8" symbolic="YES" id="w0n-HV-1WN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2De-6D-tpb"/>
                     </view>
@@ -313,7 +314,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Due" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cOE-pr-FAu">
-                                            <rect key="frame" x="20" y="52.5" width="23" height="14.5"/>
+                                            <rect key="frame" x="20" y="51.5" width="23" height="14.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -324,7 +325,7 @@
                                         <constraint firstItem="alS-VA-AlS" firstAttribute="leading" secondItem="B75-Rf-d0u" secondAttribute="leading" id="BRK-Kf-i4n"/>
                                         <constraint firstItem="cOE-pr-FAu" firstAttribute="leading" secondItem="alS-VA-AlS" secondAttribute="leading" id="NTb-fe-h8w"/>
                                         <constraint firstItem="alS-VA-AlS" firstAttribute="top" secondItem="B75-Rf-d0u" secondAttribute="bottom" constant="3" id="Rjr-vC-Cnn"/>
-                                        <constraint firstItem="cOE-pr-FAu" firstAttribute="top" secondItem="alS-VA-AlS" secondAttribute="bottom" constant="3" id="clR-G5-d0n"/>
+                                        <constraint firstItem="cOE-pr-FAu" firstAttribute="top" secondItem="alS-VA-AlS" secondAttribute="bottom" constant="2" id="clR-G5-d0n"/>
                                         <constraint firstItem="B75-Rf-d0u" firstAttribute="top" secondItem="LKA-4v-xQm" secondAttribute="topMargin" id="z9a-1C-9dH"/>
                                     </constraints>
                                 </tableViewCellContentView>
