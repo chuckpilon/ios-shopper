@@ -16,6 +16,7 @@ class NewListViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
 
     @IBOutlet weak var storePickerView: UIPickerView!
     @IBOutlet weak var name: UITextField?
+    @IBOutlet weak var dueDatePicker: UIDatePicker!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +34,8 @@ class NewListViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         
         let borderColor = UIColor.init(red: 0.9, green: 0.9, blue: 0.9, alpha: 1.0).cgColor
         name?.addBottomBorder(color: borderColor)
+        
+        dueDatePicker.minimumDate = Date()
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -64,13 +67,13 @@ class NewListViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         let selectedRow = storePickerView.selectedRow(inComponent: component)
         let indexPath = IndexPath(row: selectedRow, section: component)
         let store = fetchedResultsController.object(at: indexPath)
-
+        
         _ = ListBuilder(context: context!)
             .name(name: name!.text!)
             .open(open: true)
             .store(store: store)
             .created(created: Date())
-            .due(due: Date())
+            .due(due: dueDatePicker.date)
             .build()
         
         // Save the context.

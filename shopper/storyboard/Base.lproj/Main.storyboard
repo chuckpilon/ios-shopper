@@ -197,22 +197,40 @@
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zg2-r5-r84">
                                 <rect key="frame" x="20" y="163" width="374" height="216"/>
                             </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Due" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fmp-U8-vdR">
+                                <rect key="frame" x="20" y="387" width="31" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="15" translatesAutoresizingMaskIntoConstraints="NO" id="elq-eH-6Th">
+                                <rect key="frame" x="20" y="416" width="374" height="162"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="162" id="rVh-8Z-2dQ"/>
+                                </constraints>
+                            </datePicker>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="elq-eH-6Th" firstAttribute="top" secondItem="Fmp-U8-vdR" secondAttribute="bottom" constant="8" symbolic="YES" id="8Ii-DG-C3w"/>
                             <constraint firstItem="S33-VG-q1Q" firstAttribute="leading" secondItem="J5o-10-cSI" secondAttribute="leadingMargin" id="9bl-4T-x0E"/>
+                            <constraint firstItem="elq-eH-6Th" firstAttribute="trailing" secondItem="J5o-10-cSI" secondAttribute="trailingMargin" id="BNA-eP-4Yb"/>
                             <constraint firstItem="S33-VG-q1Q" firstAttribute="trailing" secondItem="J5o-10-cSI" secondAttribute="trailingMargin" id="HVa-yU-tvA"/>
                             <constraint firstItem="Zg2-r5-r84" firstAttribute="trailing" secondItem="S33-VG-q1Q" secondAttribute="trailing" id="I11-hb-nbE"/>
                             <constraint firstItem="rJH-L2-6su" firstAttribute="top" secondItem="2De-6D-tpb" secondAttribute="top" constant="78" id="Ro3-DE-98c"/>
+                            <constraint firstItem="Fmp-U8-vdR" firstAttribute="top" secondItem="Zg2-r5-r84" secondAttribute="bottom" constant="8" symbolic="YES" id="SKM-ZN-vYZ"/>
                             <constraint firstItem="Zg2-r5-r84" firstAttribute="leading" secondItem="rJH-L2-6su" secondAttribute="leading" id="YR2-ap-4tw"/>
                             <constraint firstItem="rJH-L2-6su" firstAttribute="leading" secondItem="J5o-10-cSI" secondAttribute="leadingMargin" id="iwT-G7-2gA"/>
                             <constraint firstItem="S33-VG-q1Q" firstAttribute="top" secondItem="2De-6D-tpb" secondAttribute="top" constant="22" id="qcP-c6-NWh"/>
+                            <constraint firstItem="elq-eH-6Th" firstAttribute="leading" secondItem="J5o-10-cSI" secondAttribute="leadingMargin" id="sqg-ix-Imd"/>
+                            <constraint firstItem="Fmp-U8-vdR" firstAttribute="leading" secondItem="Zg2-r5-r84" secondAttribute="leading" id="vcO-dz-huN"/>
                             <constraint firstItem="Zg2-r5-r84" firstAttribute="top" secondItem="rJH-L2-6su" secondAttribute="bottom" constant="8" symbolic="YES" id="w0n-HV-1WN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2De-6D-tpb"/>
                     </view>
                     <navigationItem key="navigationItem" id="EJI-OC-tEB"/>
                     <connections>
+                        <outlet property="dueDatePicker" destination="elq-eH-6Th" id="h8c-vl-CI6"/>
                         <outlet property="name" destination="S33-VG-q1Q" id="lnh-cE-ach"/>
                         <outlet property="storePickerView" destination="Zg2-r5-r84" id="ZTd-xZ-wBh"/>
                     </connections>
